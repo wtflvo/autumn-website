@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+import "./import.css";
+import { Music } from "./Components/Music/Music";
+import { Poems } from "./Components/Poem/Poem";
+import { Background } from "./Components/Background/Background";
+import { Head } from "./Components/Head/Head";
+import { Video } from "./Components/Video/Video";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export function App() {
+	return (
+		<div className="mx-[8%] mb-[8%] bg-transparent ">
+			<Background/>
+			<Head/>
+			<Music />
+			<Video/>
+			<Poems />
+		</div>
+	);
 }
-
-export default App;
